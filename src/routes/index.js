@@ -3,7 +3,7 @@ const router = express.Router();
 const alunosDB = require('../data/alunos.json');
 
 let alunoLogado = null;
-let teste = null
+let teste = [1,23,4]
 
 router.get('/', function(req, res, next) {
   if (alunoLogado == null) {
