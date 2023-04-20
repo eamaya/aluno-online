@@ -53,19 +53,21 @@
           <div class="form-group">
             <label for="inputDiscipina">Disciplina</label>
             <select class="form-control" name="disciplina" id="inputDisciplina">
-               <option value="">Selecione uma disciplina</option>
-               <% disciplinas.forEach(function(disciplina, index) { %>
-               <option value="<%= disciplina.id %> - <%= disciplina.nome %>"><%= disciplina.id %> - <%= disciplina.nome %></option>
-               <% }) %> 
+              <option value="">Selecione uma disciplina</option>
+              <% disciplinas.forEach(function(disciplina, index) { %>
+                <option value="<%= disciplina.id %> - <%= disciplina.nome %>">
+                  <%= disciplina.id %> - <%= disciplina.nome %>
+                </option>
+                <% }) %>
             </select>
           </div>
           <div class="form-group">
             <label for="inputProva">Prova</label>
             <select class="form-control" name="prova" id="inputProva">
-               <option value="">Selecione uma prova</option>
-               <option value="A1">A1</option>
-               <option value="A2">A2</option>
-               <option value="A3">A3</option>
+              <option value="">Selecione uma prova</option>
+              <option value="A1">A1</option>
+              <option value="A2">A2</option>
+              <option value="A3">A3</option>
             </select>
           </div>
           <div class="form-group">
@@ -80,7 +82,7 @@
   </div>
   <footer class="footer mt-auto text-center py-3">
     <div class="container">
-      <span class="text-muted">&copy; 2019</span>
+      <span class="text-muted">&copy; 2023</span>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
