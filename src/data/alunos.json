@@ -4,6 +4,12 @@
             "matricula": 2023100,
             "nome": "Edgar Amaya",
             "senha": "c2VuaGExMjM="
+        },
+
+        {
+            "matricula": 2020100,
+            "nome": "Jose Junior",
+            "senha": "c2VuaGExMjM="
         }
     ]
 }
