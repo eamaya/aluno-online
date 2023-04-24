@@ -18,12 +18,12 @@ router.get('/login', function(req, res, next) {
 
 router.post('/login', function(req, res, next) {
   const aluno = alunosDB.data.find(a => a.matricula === parseInt(req.body.matricula));
-  
+  console.log(aluno)
   if (aluno === undefined) {
     return res.render('login', { error: 'Usuário não cadastrado!' });
   }
 
-  if (aluno.senha !== Buffer.from(req.body.senha).toString('base64')) {
+  if (aluno.senha !== String(req.body.senha)) {
     return res.render('login', { error: 'Senha inválida!' });
   }
 
