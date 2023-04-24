@@ -19,4 +19,4 @@ class Nota {
     }
 }
 
-module.exports = Nota;
+module.exports = Nota;   
