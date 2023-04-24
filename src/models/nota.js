@@ -1,22 +1,28 @@
-class Nota {
-    constructor(disciplina, a1, a2, a3) {
-        this.disciplina = disciplina;
-        this.a1 = a1;
-        this.a2 = a2;
-        this.a3 = a3;
-    }
+function nota(disciplina, a1, a2, a3) {
 
-    mediaFinal() {
-        return Math.max(
-            0.4 * this.a1 + 0.6 * ths.a2, 
-            0.4 * this.a1 + 0.6 * this.a3, 
-            0.4 * this.a3 + 0.6 * this.a2
+    function mediaFinal() {
+        const media = Math.max(
+            0.4 * a1 + 0.6 * a2,
+            0.4 * a1 + 0.6 * a3,
+            0.4 * a3 + 0.6 * a2
         );
+        return parseFloat(media.toFixed(2));
     }
 
-    mediaCA() {
-        return "SS";
+    function mediaCA() {
+        const media = mediaFinal();
+        if (media >= 9) {
+            return "ss";
+        } else if (media >= 7.0) {
+            return "ms";
+        } else if (media >= 5) {
+            return "mm";
+        } else {
+            return "Reprovado";
+        }
     }
+
+    return { disciplina, a1, a2, a3, mediaFinal, mediaCA };
 }
 
-module.exports = Nota;
+module.exports = nota;
