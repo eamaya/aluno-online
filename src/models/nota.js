@@ -13,9 +13,9 @@ function nota(disciplina, a1, a2, a3) {
     function mediaCA() {
         const media = mediaFinal();
         if (media >= 5) {
-            return "Aprovado";
+            return "Aprovado!";
         }  else {
-            return "Reprovado";
+            return "Reprovado!";
         }
     }
 
