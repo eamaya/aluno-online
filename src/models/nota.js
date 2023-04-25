@@ -15,7 +15,24 @@ class Nota {
     }
 
     mediaCA() {
-        return "SS";
+        if (this.mediaFinal() > 9 && this.mediaFinal() < 10) {
+            return "SS"
+        }
+        else if (this.mediaFinal() > 7 && this.mediaFinal() < 9) {
+            return "MS"
+        }
+        else if (this.mediaFinal() > 5 && this.mediaFinal() < 7) {
+            return "MM"
+        }
+        else if (this.mediaFinal() > 3 && this.mediaFinal() < 5) {
+            return "MI"
+        }
+        else if (this.mediaFinal() > 0 && this.mediaFinal() < 3) {
+            return "II"
+        }
+        else {
+            return "SR"
+        }
     }
 }
 
