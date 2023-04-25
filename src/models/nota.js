@@ -6,6 +6,8 @@ class Nota {
         this.a3 = a3;
     }
 
+    
+    
     mediaFinal() {
         return Math.max(
             0.4 * this.a1 + 0.6 * this.a2, 
