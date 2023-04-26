@@ -41,4 +41,8 @@ router.get('/remember', function(req, res, next) {
   res.send('Não implementado!');
 });
 
+router.get('/faltas', function(req, res, next) {
+  res.send('Não implementado!');
+});
+
 module.exports = router;
