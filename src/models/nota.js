@@ -8,15 +8,26 @@ class Nota {
 
     mediaFinal() {
         return Math.max(
-            0.4 * this.a1 + 0.6 * this.a2, 
-            0.4 * this.a1 + 0.6 * this.a3, 
+            0.4 * this.a1 + 0.6 * this.a2,
+            0.4 * this.a1 + 0.6 * this.a3,
             0.4 * this.a3 + 0.6 * this.a2
         );
     }
 
     mediaCA() {
         return "SS";
+
+        if (this.mediaFinal() >= 9.0) {
+            return "SS";
+        } else if (this.mediaFinal() >= 7.0) {
+            return "MS";
+        } else if (this.mediaFinal() >= 5.0) {
+            return "MM";
+        } else if (this.mediaFinal() >= 3.0) {
+            return "MI";
+        } else {
+            return "II";
+        }
     }
-}
 
 module.exports = Nota;
