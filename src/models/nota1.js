@@ -7,43 +7,16 @@ class Nota {
     }
 
     mediaFinal() {
-        const media = Math.max(
-            0.4 * this.a1 + 0.6 * this.a3,
-            0.4 * this.a1 + 0.6 * this.a2,
-            0.4 * this.a3 + 0.6 * this.a2,
-            0.4 * this.a1 + 0.6 * this.a2
+        return Math.max(
+            0.4 * this.a1 + 0.6 * this.a2, 
+            0.4 * this.a1 + 0.6 * this.a3, 
+            0.4 * this.a3 + 0.6 * this.a2
         );
-
-        if (media >= 9) {
-            return {
-                media: media,
-                mencao: "SS"
-            };
-        } else if (media >= 7.5) {
-            return {
-                media: media,
-                mencao: "MS"
-            };
-        } else if (media >= 6) {
-            return {
-                media: media,
-                mencao: "MM"
-            };
-        } else if (media >= 4) {
-            return {
-                media: media,
-                mencao: "MI"
-            };
-        } else {
-            return {
-                media: media,
-                mencao: "II"
-            };
-        }
     }
 
-
+    mediaCA() {
+        return "SS";
+    }
 }
 
 module.exports = Nota;
-
