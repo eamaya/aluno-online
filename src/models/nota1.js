@@ -42,18 +42,7 @@ class Nota {
         }
     }
 
-    mediaCA1() {
-        return "MI";
-    }
-    mediaCA2() {
-        return "MS";
-    }
-    mediaCA3() {
-        return "MS";
-    }
-    mediaCA4() {
-        return "MI";
-    }
+
 }
 
 module.exports = Nota;
