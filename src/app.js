@@ -8,6 +8,7 @@ const indexRouter = require('./routes/index');
 const notaRouter = require('./routes/nota');
 const requerimentoRouter = require('./routes/requerimento');
 
+
 const app = express();
 
 // view engine setup
