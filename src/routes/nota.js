@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Nota = require('../models/nota');
 const notasDB = require('../data/notas.json');
-
+//Correção da página de notas
 router.get('', function (req, res, next) {
     const notas = [];
     notasDB.data.forEach(function(item, index) {
