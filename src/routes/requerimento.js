@@ -24,6 +24,12 @@ router.post('/novo', function(req, res, next) {
   requerimentosDB.data.push(requerimento);
 
   res.redirect('/requerimentos');
+
+  router.post('/requerimentos/editar', function(req, res, next) {
+    const requerimentoId = req.body.requerimentoId;
+    // recuperar o requerimento a partir do banco de dados usando o ID
+    // renderizar a visualização de edição do requerimento com os dados do requerimento
+  });
 });
 
 module.exports = router;
