@@ -1,0 +1,1 @@
+Reportando bug da tela faltas que não contém rota. 
