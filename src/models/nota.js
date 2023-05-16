@@ -18,7 +18,7 @@ function nota(disciplina, a1, a2, a3) {
         } else if (media >= 5) {
             return "MM";
         } else {
-            return "REPROVADO";
+            return "REPROVADO, Estude mais!";
         }
     }
 
