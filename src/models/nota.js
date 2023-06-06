@@ -18,5 +18,5 @@ class Nota {
         return "SS";
     }
 }
-
+ 
 module.exports = Nota;
