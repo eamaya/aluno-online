@@ -14,9 +14,27 @@ class Nota {
         );
     }
 
-    mediaCA() {
-        return "SS";
+  
+        mediaCA() {
+            if(mediaFinal >= 9 && mediaFinal <= 10)
+            return "SS";
+            else
+                if (mediaFinal >= 7  && mediaFinal < 9)
+                    return "MS";
+            else 
+                if (mediaFinal >=5   && mediaFinal < 7 )
+                    return "MM";
+            else 
+                if (mediaFinal >=3   && mediaFinal < 5 )
+                    return "MI";
+          
+           else 
+                if (mediaFinal >=0   && mediaFinal < 3 )
+                    return "II";
+            else 
+                return "SR"
+        }
     }
-}
+
 
 module.exports = Nota;
