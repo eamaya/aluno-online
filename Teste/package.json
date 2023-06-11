@@ -1,0 +1,22 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "Testes_utilitarios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadsonFNunes/aluno-online.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NadsonFNunes/aluno-online/issues"
+  },
+  "homepage": "https://github.com/NadsonFNunes/aluno-online#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
