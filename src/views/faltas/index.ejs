@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+<style>
+    .falta {
+        font-size:1.5rem;
+        font-weight:700;
+    }
+</style>
 
 <body class="d-flex flex-column h-100">
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
@@ -44,39 +50,15 @@
     </div>
   </nav>
   <div class="container p-2 p-md-4">
-    <div class="card">
-      <div class="card-header">
-        <span class="font-weight-bold">Suas notas</span>
-      </div>
-      <div class="card-body">
-        <div class="row font-weight-bold bg-light border-bottom">
-          <div class="col-md-5">Curso</div>
-          <div class="col-md-2">Período</div>
-        </div>
-        <div class="row pt-2 pb-2">
-          <div class="col-md-5">Análise e Desenvolvimento de Sistemas</div>
-          <div class="col-md-2">20202</div>
-        </div>
-        <div class="row font-weight-bold bg-light">
-          <div class="col-md-5">Disciplina</div>
-          <div class="col-md-1">A1</div>
-          <div class="col-md-1">A2</div>
-          <div class="col-md-1">A3</div>
-          <div class="col-md-2">Média Final</div>
-          <div class="col-md-2">Média CA</div>
-        </div>
-        <% notas.forEach(function(nota, index) { %>
-          <div class="row border-top pt-2 pb-2">
-            <div class="col-md-5"><%= nota.disciplina %></div>
-            <div class="col-md-1"><%= nota.a1 %></div>
-            <div class="col-md-1"><%= nota.a2 %></div>
-            <div class="col-md-1"><%= nota.a3 %></div>
-            <div class="col-md-2"><%= nota.mediaFinal() %></div>
-            <div class="col-md-2"><%= nota.mediaCA() %></div>
-          </div>
-        <% }) %>  
-      </div>
-    </div>
+    <h1>Faltas</h1>
+    <ul class="list-group">
+        <% faltas.forEach(function(falta) { %>
+          <li class="list-group-item bg-danger text-light d-flex align-items-center justify-content-between">
+            <div><%= falta.disciplina %></div>
+            <span class="falta"><%= falta.faltas %></span>
+          </li>
+        <% }) %>
+    </ul>
   </div>
   <footer class="footer mt-auto text-center py-3">
     <div class="container">
