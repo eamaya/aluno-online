@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\views"
+    "\\src\\models"
   ],
-  "SelectedNode": "\\src\\views\\notas",
+  "SelectedNode": "\\src\\package.json",
   "PreviewInSolutionExplorer": false
 }
