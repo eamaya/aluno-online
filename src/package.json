@@ -3,14 +3,30 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "jest"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  }
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yproshot/aluno-online.git"
+  },
+  "author": "yproshot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yproshot/aluno-online/issues"
+  },
+  "homepage": "https://github.com/Yproshot/aluno-online#readme",
+  "description": ""
 }
