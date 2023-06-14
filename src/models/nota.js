@@ -15,19 +15,22 @@ class Nota {
     }
 
     mediaCA() {
-        return "SS";
+        
 
         if (this.mediaFinal() >= 9.0) {
-            return "SS";
+            return "SS - Superior";
         } else if (this.mediaFinal() >= 7.0) {
-            return "MS";
+            return "MS - Médio Superior";
         } else if (this.mediaFinal() >= 5.0) {
-            return "MM";
+            return "MM - Médio médio";
         } else if (this.mediaFinal() >= 3.0) {
-            return "MI";
+            return "MI - Médio inferior";
+        } else if (this.mediaFinal() >= 0.1) {
+            return "II - Inferior infeior";
         } else {
-            return "II";
+            return "RR - Sem Rendimento";
         }
     }
+}
 
 module.exports = Nota;
