@@ -16,6 +16,12 @@ class Nota {
 
     mediaCA() {
         return "SS";
+        9,0 – 10  | SS – Superior
+        7,0 – 8,9 | MS – Médio Superior
+        5,0 – 6,9 | MM – Médio
+        3,0 – 4,9 | MI – Médio Inferior
+        0,1 – 2,9 | II – Inferior
+        0,0       | SR – Sem rendimento
     }
 }
 
