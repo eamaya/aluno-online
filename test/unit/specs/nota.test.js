@@ -1,4 +1,4 @@
-const Nota = require('../src/models/nota');
+const Nota = require('../../../src/models/nota');
 
 describe('Calculo da média final', () => {
     test('a media é zero se não tem notas', () => {
