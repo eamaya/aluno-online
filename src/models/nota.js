@@ -15,7 +15,16 @@ class Nota {
     }
 
     mediaCA() {
-        return "SS";
+        let resposta = Math.max(
+            0.4 * this.a1 + 0.6 * this.a2, 
+            0.4 * this.a1 + 0.6 * this.a3, 
+            0.4 * this.a3 + 0.6 * this.a2
+        );
+        if(resposta > 5.0){
+            return "AP";
+        }else{
+            return "RP";
+        }
     }
 }
 
