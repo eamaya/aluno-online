@@ -16,7 +16,7 @@ Abrir a pasta `aluno-online` no VS Code. Abrir um novo Terminal (Ctrl+Shift+`) d
 
 Criar as imagens docker digitando no Terminal os comandos
 
-```bash
+```bash  
 docker image build -t aluno-online -f src/Dockerfile .
 docker image build -t unit-jest -f test/unit/Dockerfile .
 docker image build -t e2e-capybara -f test/e2e/Dockerfile .
