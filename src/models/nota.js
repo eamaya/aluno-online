@@ -14,8 +14,21 @@ class Nota {
     );
   }
 
-  mediaCA() {
-    return "SS";
+  mediaCA(media = this.mediaFinal()) {
+    switch (media) {
+      case media >= 9.0:
+        return "SS - Superior";
+      case media >= 7.0 && media <= 8.99:
+        return "MS - Médio Superior";
+      case media >= 5.0 && media <= 6.99:
+        return "MM - Médio";
+      case media >= 3.0 && media <= 4.99:
+        return "MI - Médio Inferior";
+      case media >= 1.0 && media <= 2.99:
+        return "II - Inferior";
+      case media >= 0 && media <= 2.99:
+        return "SR - Sem Rendimento";
+    }
   }
 }
 
