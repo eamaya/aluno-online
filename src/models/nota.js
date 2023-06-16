@@ -14,20 +14,8 @@ class Nota {
     );
   }
 
-  mediaCA(media = this.mediaFinal()) {
-    if (media >= 9.0) {
-      return "SS - Superior"; // superior
-    } else if (media >= 7.0 && media <= 8.99) {
-      return "MS - Médio Superior"; // médio superior
-    } else if (media >= 5.0 && media <= 6.99) {
-      return "MM - Médio"; // médio
-    } else if (media >= 3.0 && media <= 4.99) {
-      return "MI - Médio Inferior"; // médio inferior
-    } else if (media >= 0.1 && media <= 2.99) {
-      return "II - Inferior"; // inferior
-    } else {
-      return "SR - Sem Rendimento"; // sem rendimento
-    }
+  mediaCA() {
+    return "SS";
   }
 }
 
