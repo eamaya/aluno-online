@@ -1,28 +1,36 @@
+const PESO_A1 = 0.4; const PESO_A2 = 0.6;
+
 function nota(disciplina, a1, a2, a3) {
 
-    function mediaFinal() {
-        const media = Math.max(
-            0.4 * a1 + 0.6 * a2,
-            0.4 * a1 + 0.6 * a3,
-            0.4 * a3 + 0.6 * a2
-        );
-        return parseFloat(media.toFixed(2));
-    }
+const mediaFinal = () => {
+    const media = Math.max(
+        PESO_A1 * a1 + PESO_A2 * a2,
+        PESO_A1 * a1 + PESO_A2 * a3,
+        PESO_A1 * a3 + PESO_A2 * a2
+    );
+    return parseFloat(media.toFixed(2));
+}
 
-    function mediaCA() {
-        const media = mediaFinal();
-        if (media >= 9) {
+const mediaCA = () => {
+    const media = mediaFinal();
+    switch (true) {
+        case media >= 9:
             return "SS";
-        } else if (media >= 7.0) {
+        case media >= 7:
             return "MS";
-        } else if (media >= 5) {
+        case media >= 5:
             return "MM";
-        } else {
+        case media >= 3:
+            return "II";
+        case media >= 0:
+            return "SR";
+        default:
             return "REPROVADO";
-        }
     }
+}
 
-    return {disciplina, a1, a2, a3, mediaFinal, mediaCA};
+return {disciplina, a1, a2, a3, mediaFinal, mediaCA};
 }
 
 module.exports = nota;
+
