@@ -15,7 +15,21 @@ class Nota {
     }
 
     mediaCA() {
-        return "SS";
+        const media = this.mediaFinal();
+
+        if (media >= 0 && media < 2.5) {
+            return "II";
+        } else if (media >= 2.5 && media < 5) {
+            return "MI";
+        } else if (media >= 5 && media < 7.5) {
+            return "MM";
+        } else if (media >= 7.5 && media < 9) {
+            return "MS";
+        } else if (media >= 9 && media <= 10) {
+            return "SS";
+        } else {
+            throw new Error("Nota inválida.");
+        }
     }
 }
 
