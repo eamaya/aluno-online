@@ -1,0 +1,15 @@
+it('BstackDemo', () => {
+  cy.visit('https://bstackdemo.com/');
+
+  cy.get("#signin").click();
+
+  cy.get("#username").click().type('demouser');
+  cy.get("#password").click().type('testingisfun99');
+  cy.get("#login-btn").click();
+
+  cy.get("#logout").should('have.text','Logout');
+
+  cy.get("#logout").click();
+
+  cy.get("#signin").should('have.text','Sign In');
+});
