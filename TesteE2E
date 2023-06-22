@@ -1,0 +1,10 @@
+describe('My E2E Test', () => {
+  it('Visits the website and performs some actions', () => {
+    cy.visit('https://www.example.com')
+    cy.title().should('include', 'Example')
+    cy.get('input[name="username"]').type('myUsername')
+    cy.get('input[name="password"]').type('myPassword')
+    cy.get('button[type="submit"]').click()
+    cy.get('h1').should('contain', 'Welcome')
+  })
+})
