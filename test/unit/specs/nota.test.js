@@ -1,7 +1,7 @@
 const Nota = require('../src/models/nota');
 
 describe('Calculo da média final', () => {
-    test('a media é zero se não tem notas', () => {
+    test('a média é zero se não tem notas', () => {
         let nota = new Nota(null, 0, 0, 0);
         expect(nota.mediaFinal()).toEqual(0);
         nota = new Nota(null, null, null, null)
