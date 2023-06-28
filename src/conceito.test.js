@@ -1,4 +1,4 @@
-const Nota = require('../../../src/models/nota');
+const Nota = require('./models/nota');
 
 describe('Deve retornar o conceito final com base nas notas a1, a2 e a3', () => {
 	it('Deve retornar a mensão "SS" para a média final que ficar entre 9.0 e 10.0', () => {
